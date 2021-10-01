@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="cellTableViewCell" customModule="swipeGesture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqc-xC-jX4">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="141"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzv-kj-f63" userLabel="ScrollableContent">
+                                <rect key="frame" x="0.0" y="0.0" width="510" height="141"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-R3-O5H">
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="141"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sb-jm-p9j">
+                                                <rect key="frame" x="10" y="10" width="390" height="131"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZd-C5-sQv">
+                                                <rect key="frame" x="346" y="10" width="54" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2sb-jm-p9j" firstAttribute="top" secondItem="d6L-R3-O5H" secondAttribute="top" constant="10" id="2dz-5E-aV2"/>
+                                            <constraint firstItem="2sb-jm-p9j" firstAttribute="leading" secondItem="d6L-R3-O5H" secondAttribute="leading" constant="10" id="MsD-zO-DMp"/>
+                                            <constraint firstItem="jZd-C5-sQv" firstAttribute="top" secondItem="d6L-R3-O5H" secondAttribute="top" constant="10" id="XEq-Dd-b2F"/>
+                                            <constraint firstAttribute="trailing" secondItem="2sb-jm-p9j" secondAttribute="trailing" constant="10" id="ee2-si-AK5"/>
+                                            <constraint firstAttribute="trailing" secondItem="jZd-C5-sQv" secondAttribute="trailing" constant="10" id="kSL-yP-sTX"/>
+                                            <constraint firstAttribute="bottom" secondItem="2sb-jm-p9j" secondAttribute="bottom" id="lFO-HJ-SiE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.72279811549831086" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d6L-R3-O5H" firstAttribute="top" secondItem="mzv-kj-f63" secondAttribute="top" id="g69-Fo-XEg"/>
+                                    <constraint firstAttribute="bottom" secondItem="d6L-R3-O5H" secondAttribute="bottom" id="qSe-W2-3au"/>
+                                    <constraint firstItem="d6L-R3-O5H" firstAttribute="leading" secondItem="mzv-kj-f63" secondAttribute="leading" id="rP1-bR-CvH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="d6L-R3-O5H" firstAttribute="width" secondItem="Jqc-xC-jX4" secondAttribute="width" id="109-DO-k6D"/>
+                            <constraint firstItem="mzv-kj-f63" firstAttribute="top" secondItem="Jqc-xC-jX4" secondAttribute="top" id="IZq-LX-P7t"/>
+                            <constraint firstItem="mzv-kj-f63" firstAttribute="height" secondItem="Jqc-xC-jX4" secondAttribute="height" id="Pgj-YE-kTm"/>
+                            <constraint firstAttribute="trailing" secondItem="mzv-kj-f63" secondAttribute="trailing" id="UFe-MU-MCZ"/>
+                            <constraint firstAttribute="bottom" secondItem="mzv-kj-f63" secondAttribute="bottom" id="mDF-E2-TBP"/>
+                            <constraint firstItem="mzv-kj-f63" firstAttribute="width" secondItem="Jqc-xC-jX4" secondAttribute="width" constant="100" id="t2f-oN-pbU"/>
+                            <constraint firstItem="mzv-kj-f63" firstAttribute="leading" secondItem="Jqc-xC-jX4" secondAttribute="leading" id="uRI-On-9zV"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jqc-xC-jX4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5TW-NY-BtO"/>
+                    <constraint firstItem="Jqc-xC-jX4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KF8-Ui-zSG"/>
+                    <constraint firstAttribute="trailing" secondItem="Jqc-xC-jX4" secondAttribute="trailing" id="YDu-if-wxP"/>
+                    <constraint firstAttribute="bottom" secondItem="Jqc-xC-jX4" secondAttribute="bottom" id="hyb-rM-IRE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="2sb-jm-p9j" id="eul-5m-lzH"/>
+                <outlet property="openedIndicationLabel" destination="jZd-C5-sQv" id="Zng-Mn-leg"/>
+                <outlet property="scrollView" destination="Jqc-xC-jX4" id="TkN-r0-aEE"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="153.01339285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
